@@ -1,0 +1,48 @@
+{
+   "metaDataVersion":"1.0.0",
+   "category":"com.microchip.matlab.project",
+   "content":{
+      "metaDataVersion":"1.0.0",
+      "name":"com.microchip.matlab.project.matlab-dspic33a-curiosity-i2cexample-mpu9250",
+      "version":"1.0.0",
+      "displayName":"MATLAB/Simulink Model for I2C Peripheral Demonstration on dsPIC33AK128MC106",
+      "projectName":"matlab-dspic33a-curiosity-i2cexample-mpu9250",
+      "shortDescription":"MATLAB/Simulink Model for I2C Peripheral Demonstration on the hardware platform Curiosity Platform Development Board, dsPIC33AK128MC106 GP DIM and MPU9250 sensor on the MPU 9DOF Click Board",
+      "simulationTool":{
+         "name":"MATLAB/Simulink",
+         "semverRange":">=2024"
+      },
+	  "addonPackages":[
+				"MATLAB add on packages",
+				"Simulink",
+				"MPLAB Device blocks for Simulink",
+				"Embedded Coder"
+      ],
+      "compiler":{
+         "name":"XCDSC",
+         "semverRange":"^3.21"
+      },
+      "dfp":{
+         "name":"dsPIC33AK-MC_DFP",
+         "semverRange":">=1.1.109"
+      },
+      "device":{
+         "metaDataVersion":"1.0.0",
+         "category":"com.microchip.portal.contentRef",
+         "content":{
+            "metaDataVersion":"1.0.0",
+            "category":"com.microchip.device",
+            "name":"dsPIC33AK128MC106",
+            "versionRange":"*"
+         }
+      },
+      "keywords":[
+         "Communication Module",
+         "I2C",
+         "I2C Protocol",
+         "GPIO",
+	      "ADC",
+	      "PWM"
+      ]
+   }
+}

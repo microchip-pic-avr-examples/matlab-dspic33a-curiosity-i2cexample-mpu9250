@@ -4,14 +4,14 @@
     <img alt="Microchip Logo." src="images/microchip_logo_black_red.png">
 </picture> 
 
-# MATLAB/Simulink Model for I2C Peripheral Example: Curiosity Platform Development Board, dsPIC33AK128MC106 Curiosity GP DIM and MPU9250
+# MATLAB/Simulink Model for I2C Peripheral Example: Roll and Pitch Angles Esitimation using Curiosity Platform Development Board, dsPIC33AK128MC106 Curiosity GP DIM and MPU9250
 
 ## 1. INTRODUCTION
 
 This document describes the setup requirements for demonstration of I2C communication on the hardware platform 
 [EV74H48A](https://www.microchip.com/en-us/development-tool/EV74H48A) "Curiosity Platform Development Board" and [EV02G02A](https://www.microchip.com/en-us/development-tool/EV02G02A) "dsPIC33AK128MC106 General Purpose Dual In-Line Module (DIM)" using MPU9250 sensor on the MPU 9DOF Click Board.</p>
 
-MPU-9250 is a multi-chip module (MCM) with 9-axis MotionTracking device that combines a 3-axis gyroscope, 3-axis accelerometer, 3-axis magnetometer and a Digital Motion Processor™ (DMP).
+MPU-9250 is a multi-chip module (MCM) with 9-axis MotionTracking device that combines a 3-axis gyroscope, 3-axis accelerometer, 3-axis magnetometer and a Digital Motion Processor™ (DMP). This example exclusively uses 3-axis gyroscope, and the 3-axis accelerometer to estimate the roll and pitch angles.
 
 ## 2. SUGGESTED DEMONSTRATION REQUIREMENTS
 
@@ -31,8 +31,8 @@ To clone or download this MATLAB model on GitHub,
     -	Simulink Coder (v24.2)
     -	MATLAB Coder (v24.2)
     -	Embedded Coder (v24.2)
-    -	MPLAB Device blocks for Simulink (v3.59)
-    - Motor Control Blockset (v24.2)
+    -	MPLAB Device blocks for Simulink (v3.62)
+    - Motor Control Blockset (v24.2)    
 > **_NOTE:_**
 >The software tools used for testing the model during release is listed above. It is recommended to use the version listed above or later versions for building the model.
 
@@ -74,7 +74,7 @@ This section describes the hardware setup required for the demonstration.
     <p align="left" >
     <img  src="images/dem1.png"width="500"></p>
 
-3.	Double click on the I2C example Simulink model - **curiosity_i2c.slx**. This opens the Simulink model as shown below.
+3.	Double click on the I2C example Simulink model - **curiosity_i2c_pitch_roll.slx**. This opens the Simulink model as shown below.
 
     <p align="left">
       <img  src="images/dem3.png"width="500"></p>
@@ -120,7 +120,7 @@ This section describes the hardware setup required for the demonstration.
       <img  src="images/led_rgb.png"width="500"></p>
     </p>
 
-9. <p style='text-align: justify;'>	To view the I2C communication from <b>"MPU9250" </b> double click on the scope. This opens the scope view. Tilt or turn the development board by hand to view variations in the signal from the <b>accelerometer, gyroscope and magnetometer sensors of MPU9250</b>.
+9. <p style='text-align: justify;'>	To view the estimated roll and ptch angle from the <b>accelerometer, gyroscope sensors of MPU9250</b> double click on the scope. This opens the scope view. Tilt or turn the development board by hand to view variations in the roll and pitch angles.
 
     <p align="left">
       <img  src="images/dem9.png"width="500"></p>
@@ -132,6 +132,8 @@ This section describes the hardware setup required for the demonstration.
       <img  src="images/dem10.png"width="500"></p>
     </p>
 
+> **Note:** </br>
+>Ensure that at startup, the **development board** and **MPU9250** remain static and level for about 2 seconds for calibration. After calibration, the board can be tilted or rotated to observe angle variations.
 
 ## 	REFERENCES:
 For more information, refer to the following documents or links.

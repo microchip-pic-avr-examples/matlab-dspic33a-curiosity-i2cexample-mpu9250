@@ -11,7 +11,7 @@
 This document describes the setup requirements for demonstration of I2C communication on the hardware platform 
 [EV74H48A](https://www.microchip.com/en-us/development-tool/EV74H48A) "Curiosity Platform Development Board" and [EV02G02A](https://www.microchip.com/en-us/development-tool/EV02G02A) "dsPIC33AK128MC106 General Purpose Dual In-Line Module (DIM)" using MPU9250 sensor on the MPU 9DOF Click Board.</p>
 
-MPU-9250 is a multi-chip module (MCM) with 9-axis MotionTracking device that combines a 3-axis gyroscope, 3-axis accelerometer, 3-axis magnetometer and a Digital Motion Processor™ (DMP). This example exclusively uses 3-axis gyroscope, and the 3-axis accelerometer to estimate the roll and pitch angles.
+MPU-9250 is a multi-chip module (MCM) with 9-axis Motion Tracking device that combines a 3-axis gyroscope, 3-axis accelerometer, 3-axis magnetometer and a Digital Motion Processor™ (DMP). This example exclusively uses 3-axis gyroscope, and the 3-axis accelerometer to estimate the roll and pitch angles.
 
 ## 2. SUGGESTED DEMONSTRATION REQUIREMENTS
 
@@ -19,7 +19,7 @@ MPU-9250 is a multi-chip module (MCM) with 9-axis MotionTracking device that com
 
 To clone or download this MATLAB model on GitHub, 
 
-- MATLAB model can be cloned or downloaded as zip file from the Github repository ([link](https://github.com/microchip-pic-avr-solutions/matlab-dspic33a-curiosity-i2cexample-mpu9250)).
+- MATLAB model can be cloned or downloaded as zip file from the Github repository ([link](https://github.com/microchip-pic-avr-examples/matlab-dspic33a-curiosity-i2cexample-mpu9250)).
 
 ### 2.2 Software Tools Used for Testing the MATLAB/Simulink Model
 
@@ -57,7 +57,7 @@ This section describes the hardware setup required for the demonstration.
      <p align="left" >
      <img  src="images/microbusA.png"width="500"></p>
 
-3. The development board has an onboard programmer **PICkit™ On Board (PKoBv4)** , which can be used for programming or debugging the microcontroller or dsPIC DSC on the DIM. To use the onboard programmer, connect a micro-USB cable between the Host PC and **connector J24** on the development board.
+3. The development board has an onboard programmer **PICkit™ On Board (PKoBv4)** , which can be used for programming or debugging the microcontroller or dsPIC DSC on the DIM. To use the onboard programmer, connect a Micro-C® cable between the Host PC and **connector J24** on the development board.
 
     The development board is also powered by this USB itself.
 
@@ -96,7 +96,7 @@ This section describes the hardware setup required for the demonstration.
     </p>
 
     > **Note:** </br>
-    >Two COM ports are available on the development board. Select the second COM port number for the external mode (if COM2 and COM3 are available on the development board, select COM3).
+    >The PKOB4 based USB-UART Channel is used in this example for USB-UART communication. The development board has a 2-port USB hub.
 
 6.	<p style='text-align: justify;'>	To generate the code and run the I2C communication on hardware, click on <b>"Monitor & Tune" </b> option under the <b>Hardware</b> tab and ensure that <b>"Stop Time" </b> is set to <b>"inf"</b>. 
 
@@ -108,32 +108,33 @@ This section describes the hardware setup required for the demonstration.
     <p align="left">
       <img  src="images/dem7.png"width="500"></p>
 
-    </p><p style='text-align: justify;'> The <b>General Purpose LED's</b> will be blinking.
+8. </p><p style='text-align: justify;'> The <b>General Purpose LED's</b> will be blinking.
 
     <p align="left">
       <img  src="images/debug_led.png"width="500"></p>
     </p>
 
-8. <p style='text-align: justify;'>	The <b> RGB LEB</b> will be glowing in different colors. To increase the brightness of the RGB LED, vary the <b>Potentiometer</b> on the development board.
+9. <p style='text-align: justify;'>	The <b> RGB LEB</b> will be glowing in different colors. To increase the brightness of the RGB LED, vary the <b>Potentiometer</b> on the development board.
 
     <p align="left">
       <img  src="images/led_rgb.png"width="500"></p>
     </p>
 
-9. <p style='text-align: justify;'>	To view the estimated roll and ptch angle from the <b>accelerometer, gyroscope sensors of MPU9250</b> double click on the scope. This opens the scope view. Tilt or turn the development board by hand to view variations in the roll and pitch angles.
+10. <p style='text-align: justify;'>	To visualize the estimated roll and ptch angles from the <b>accelerometer, gyroscope sensors of MPU9250</b> double click on the scope. This opens the scope view. Tilt or turn the development board by hand to view variations in the roll and pitch angles.
 
     <p align="left">
       <img  src="images/dem9.png"width="500"></p>
     </p>
 
-10. <p style='text-align: justify;'>Click on the <b>Stop</b> button to stop the I2C communication and external mode.
+11. <p style='text-align: justify;'>Click on the <b>Stop</b> button to stop the I2C communication and external mode.
 
     <p align="left">
       <img  src="images/dem10.png"width="500"></p>
     </p>
 
 > **Note:** </br>
->Ensure that at startup, the **development board** and **MPU9250** remain static and level for about 2 seconds for calibration. After calibration, the board can be tilted or rotated to observe angle variations.
+>At each startup, the system calibrates the accelerometer and gyroscope of the **MPU 9DOF Click board**. During this 2-second calibration period, the **development board** and **MPU 9DOF Click board** must remain stationary (do not move/ shake). After calibration, the board can be tilted or rotated to observe angle variations.
+
 
 ## 	REFERENCES:
 For more information, refer to the following documents or links.

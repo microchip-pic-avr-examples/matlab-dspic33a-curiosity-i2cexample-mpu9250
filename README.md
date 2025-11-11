@@ -103,7 +103,7 @@ This section describes the hardware setup required for the demonstration.
     <p align="left">
       <img  src="images/dem6.png"width="500"></p>
     </p>
-7.	<p style='text-align: justify;'> After compilation and programming the device. The external mode will be running on the dsPIC.
+7.	<p style='text-align: justify;'> After compiling the code and programming the device, External Mode will be activated on the dsPIC DSC.
 
     <p align="left">
       <img  src="images/dem7.png"width="500"></p>

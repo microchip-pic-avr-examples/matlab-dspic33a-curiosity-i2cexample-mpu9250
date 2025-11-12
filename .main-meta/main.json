@@ -4,7 +4,7 @@
    "content":{
       "metaDataVersion":"1.0.0",
       "name":"com.microchip.matlab.project.matlab-dspic33a-curiosity-i2cexample-mpu9250",
-      "version":"2.0.0",
+      "version":"2.0.1",
       "displayName":"MATLAB/Simulink Model for I2C Peripheral Demonstration on dsPIC33AK128MC106",
       "projectName":"matlab-dspic33a-curiosity-i2cexample-mpu9250",
       "shortDescription":"MATLAB/Simulink Model for I2C Peripheral Example: Roll and Pitch Angles Esitimation using Curiosity Platform Development Board, dsPIC33AK128MC106 Curiosity GP DIM and MPU9250",

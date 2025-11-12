@@ -4,7 +4,7 @@
     <img alt="Microchip Logo." src="images/microchip_logo_black_red.png">
 </picture> 
 
-# MATLAB/Simulink Model for I2C Peripheral Example: Roll and Pitch Angles Esitimation using Curiosity Platform Development Board, dsPIC33AK128MC106 Curiosity GP DIM and MPU9250
+# MATLAB/Simulink Model for I2C Peripheral Example: Roll and Pitch Angles Estimation using Curiosity Platform Development Board, dsPIC33AK128MC106 Curiosity GP DIM and MPU9250
 
 ## 1. INTRODUCTION
 
@@ -52,7 +52,7 @@ This section describes the hardware setup required for the demonstration.
      <p align="left" >
      <img  src="images/dimconnected.png"width="500"></p>
 
-2. Insert the **MPU 9DOF click** into the **mikro BUS A** interface **connector J13** on the development board. Make sure the click board is inserted correctly before going ahead.
+2. Insert the **MPU 9DOF CLICK** into the **mikro BUS A** interface **connector J13** on the development board. Make sure the click board is inserted correctly before going ahead.
 
      <p align="left" >
      <img  src="images/microbusA.png"width="500"></p>
@@ -81,7 +81,7 @@ This section describes the hardware setup required for the demonstration.
     </p>
 
     > **Note:** </br>
-    >This example demonstrates only the code generation to demostrate the I2C communication. The simulation is not possible in this case.
+    >This example demonstrates only the code generation to demonstrate the I2C communication. The simulation is not possible in this case.
 
 4.	<p style='text-align: justify;'>From this Simulink model an MPLAB X project can be generated, and it can be used to run the I2C Communication using development board. <p style='text-align: justify;'>To generate the code from the Simulink model, go to the <b>"MICROCHIP"</b> tab, and enable the tabs shown in the figure below. 
 
@@ -108,19 +108,19 @@ This section describes the hardware setup required for the demonstration.
     <p align="left">
       <img  src="images/dem7.png"width="500"></p>
 
-8. </p><p style='text-align: justify;'> The <b>General Purpose LED's</b> will be blinking.
+8. </p><p style='text-align: justify;'> The <b>General Purpose LEDs</b> will be blinking.
 
     <p align="left">
       <img  src="images/debug_led.png"width="500"></p>
     </p>
 
-9. <p style='text-align: justify;'>	The <b> RGB LEB</b> will be glowing in different colors. To increase the brightness of the RGB LED, vary the <b>Potentiometer</b> on the development board.
+9. <p style='text-align: justify;'>	The <b> RGB LED</b> will be glowing in different colors. To increase the brightness of the RGB LED, vary the <b>Potentiometer</b> on the development board.
 
     <p align="left">
       <img  src="images/led_rgb.png"width="500"></p>
     </p>
 
-10. <p style='text-align: justify;'>	To visualize the estimated roll and ptch angles from the <b>accelerometer, gyroscope sensors of MPU9250</b> double click on the scope. This opens the scope view. Tilt or turn the development board by hand to view variations in the roll and pitch angles.
+10. <p style='text-align: justify;'>	To visualize the estimated roll and pitch angles from the <b>accelerometer, gyroscope sensors of MPU9250</b> double click on the scope. This opens the scope view. Tilt or turn the development board by hand to view variations in the roll and pitch angles.
 
     <p align="left">
       <img  src="images/dem9.png"width="500"></p>
